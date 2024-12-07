@@ -80,7 +80,7 @@ AddEventHandler('rxkxvinewoodsign:saveText', function(data)
     file[1] = newText
     file[2] = newColor
     SaveResourceFile(GetCurrentResourceName(), Config.FileName, json.encode(file, {indent = true}), -1)
-    TriggerClientEvent('ricky-vinewood:saveText', -1, file)
+    TriggerClientEvent('rxkxvinewoodsign:saveText', -1, file)
 end)
 
 RegisterServerEvent('rxkxvinewoodsign:loadText')
